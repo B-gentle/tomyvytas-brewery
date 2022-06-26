@@ -76,6 +76,7 @@ margin: 10px 0;
 }
 .services ul li{
     font-size: 1.5rem;
+
     font-family: drink-names;
 }
 .drinks{
@@ -98,13 +99,14 @@ margin: 10px 0;
 
 footer{
     background-color: #000;
-    padding: 10px;
+    padding: 5px;
     font-size: 1.5rem;
     color: #fff ;
 }
 
 footer p{
     text-align: center;
+    font-family: footer;
 
 }
 
@@ -133,6 +135,11 @@ footer p{
     src: url(fonts/kanit/Kanit-Light.ttf);
 }
 
+@font-face {
+    font-family: footer;
+    src: url(fonts/kanit/Kanit-ExtraLightItalic.ttf);
+}
+
 @media screen and (max-width: 480px) {
     body{
         font-size: 16px;
@@ -142,6 +149,8 @@ footer p{
         font-size: 1.2rem;
         position: relative;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
      
     }
     .sect1{
@@ -150,11 +159,9 @@ footer p{
     nav div ul{
         display: none;
         flex-direction: column;
-        align-items:flex-start;
-        justify-content: left;
-        margin-right: 50%;
-        /* top: 15px;
-        left: -40px; */
+        margin-top:2px;
+        width: 100%;
+        padding-left: 0;
 
     }
 
@@ -164,7 +171,7 @@ footer p{
 
     .dropdown{
         display: block;
-        position: fixed;
+        position: absolute;
         left: 85%;
         top: 10px;
     }
