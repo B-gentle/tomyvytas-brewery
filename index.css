@@ -1,0 +1,172 @@
+body{
+    font-size: 20px;
+    font-family: body;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+nav div ul{
+    display: flex; 
+}
+
+nav div ul li{
+    font-family: navbar;
+    font-size: 1.3rem;
+}
+
+.nav-logo-text span{
+    font-family: nav-header;
+    font-size: 2rem;
+}
+
+.dropdown{
+    font-size: 2rem;
+    display: none;
+}
+ul li{
+    list-style: none;
+    list-style-position: inside;
+    margin: 1px 10px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section{
+    margin: 70px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px 5px rgb(233, 207, 207);
+    padding: 5px;
+
+}
+.sect1{
+text-align: center;
+background-color: coral;
+padding: 30px;
+font-size: 3rem;
+color: #fff;
+margin: 10px 0;
+}
+
+.section-titles{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: header-title;
+    font-size: 1.5rem;
+}
+.OT{
+    display: flex;
+    justify-content: space-around;
+    line-height: 0.5;
+}
+.services{
+    text-align: center;
+}
+
+.services ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services ul li{
+    font-size: 1.5rem;
+    font-family: drink-names;
+}
+.drinks{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.about{
+    text-align: center;
+}
+.branches li{
+    list-style-type: circle;
+    margin: auto;
+   
+}
+.contact{
+    text-align: center;
+}
+
+footer{
+    background-color: #000;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff ;
+}
+
+footer p{
+    text-align: center;
+
+}
+
+@font-face {
+    font-family: drink-names;
+    src: url(fonts/righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: navbar;
+    src: url(fonts/kanit/Kanit-Medium.ttf);
+}
+
+@font-face {
+    font-family: nav-header;
+    src: url(fonts/kanit/Kanit-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: header-title;
+    src: url(fonts/kanit/Kanit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(fonts/kanit/Kanit-Light.ttf);
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 16px;
+    }
+    
+    nav{
+        font-size: 1.2rem;
+        position: relative;
+        flex-direction: column;
+        border: 2px solid black;
+     
+    }
+    .sect1{
+        font-size: 1.5rem;
+    }
+    nav div ul{
+        display: none;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: left;
+        margin-right: 50%;
+        /* top: 15px;
+        left: -40px; */
+
+    }
+
+    nav div ul.drop{
+        display: block;
+    }
+
+    .dropdown{
+        display: block;
+        position: fixed;
+        left: 85%;
+        top: 10px;
+    }
+}
