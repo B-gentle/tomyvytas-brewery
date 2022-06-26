@@ -142,7 +142,6 @@ footer p{
         font-size: 1.2rem;
         position: relative;
         flex-direction: column;
-        border: 2px solid black;
      
     }
     .sect1{
@@ -168,5 +167,13 @@ footer p{
         position: fixed;
         left: 85%;
         top: 10px;
+    }
+
+    .branches{
+        margin: auto;
+    }
+
+    .branches li{
+        text-align: left;
     }
 }
